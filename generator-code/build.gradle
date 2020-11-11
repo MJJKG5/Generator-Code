@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.kg'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+targetCompatibility = '11'
+
+repositories {
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public' }
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.freemarker:freemarker:2.3.30'
+    implementation 'mysql:mysql-connector-java:8.0.21'
+    
+    testImplementation 'junit:junit:4.13'
+}
